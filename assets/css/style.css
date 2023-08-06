@@ -1,0 +1,131 @@
+@import './colors.css';
+@import './typography.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: calc(100vw - (100vw - 100%));
+  min-height: 100vh;
+
+  background: linear-gradient(180deg, transparent 0%, var(--senary) 100%);
+
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1280px;
+  min-height: inherit;
+
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  padding: 1rem 2rem;
+  font: 500 1rem 'DM Sans', Arial, sans-serif;
+  border: none;
+  border-radius: 0.25rem;
+  width: fit-content;
+  cursor: pointer;
+}
+
+nav,
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 3rem;
+  row-gap: 1.5rem;
+}
+
+nav {
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+nav ul li a:hover {
+  font-weight: 700;
+  color: var(--tertiary);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-content: space-between;
+  column-gap: 2.5rem;
+  row-gap: 1.5rem;
+
+  align-items: center;
+
+  margin-top: 2rem;
+}
+
+main .presentation {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+main .fitness-jump {
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.balls-decoration {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+
+  nav * {
+    margin: 0 auto;
+  }
+
+  button {
+    width: 100%;
+  }
+}

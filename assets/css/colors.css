@@ -1,0 +1,64 @@
+:root {
+  --primary: #89C5CC;
+  --secondary: #69B99D;
+  --tertiary: #1F1534;
+  --quaternary: #8F8A99;
+  --quinary: #7D7987;
+  --quinary: #7D7987;
+  --senary: #E3FFF8;
+
+  --black: #000000;
+  --white: #ffffff;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-tertiary {
+  color: var(--tertiary);
+}
+
+.text-quaternary {
+  color: var(--quaternary);
+}
+
+.text-quinary {
+  color: var(--quinary);
+}
+
+.text-black {
+  color: var(--black);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-tertiary {
+  background-color: var(--tertiary);
+}
+
+.bg-quaternary {
+  background-color: var(--quaternary);
+}
+
+.bg-quinary {
+  background-color: var(--quinary);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
